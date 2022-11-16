@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+  name: minimal-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: bear.100.67.12.215.nip.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: bear-svc
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+
