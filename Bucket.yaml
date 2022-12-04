@@ -2,4 +2,4 @@ Resources:
   MyS3Bucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: "ShaiM-S3Bucket-1"
+      BucketName: "shaim-s3bucket-1"
