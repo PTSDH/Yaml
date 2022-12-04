@@ -24,18 +24,3 @@ Parameters:
     Description: ShaiM-EC2-Lab10
     Type: String
 ##### End Parameters #####
-
-##### Begin Resources #####
-Resources:
-  MyEC2Instance:
-    Type: AWS::EC2::Instance
-    Properties:
-      #we reference the InstanceType parameter
-      InstanceType: !Ref InstanceType
-      KeyName: !Ref KeyName
-      ImageId: ami-0a1a70369f0fce06a
-      Tags:
-      - Key: Name
-        Value: !Ref InstanceName
-      SubnetId: !Ref MySubnet1
-##### End Resources #####
