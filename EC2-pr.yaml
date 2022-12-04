@@ -26,8 +26,16 @@ Parameters:
 ##### End Parameters #####
 
 ##### Begin Resources #####
-  InstanceType: !Ref InstanceType
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      #we reference the InstanceType parameter
+      InstanceType: !Ref InstanceType
       KeyName: !Ref KeyName
       ImageId: ami-096800910c1b781ba
+      Tags:
+      - Key: Name
+        Value: !Ref InstanceName
       
 ##### End Resources #####
