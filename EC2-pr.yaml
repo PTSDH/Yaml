@@ -16,7 +16,7 @@ Parameters:
   #Dropbox example, retrieve KeyPair from your AWS account
   KeyName:
     Description: Name of an existing EC2 KeyPair to enable SSH access to the instances. Linked to AWS Parameter
-    Type: AWS::EC2::KeyPair::ShaiM-Keyl
+    Type: AWS::EC2::KeyPair::ShaiM-Keyl.pem
     ConstraintDescription: must be the name of an existing EC2 KeyPair.
   
   #String input examples
