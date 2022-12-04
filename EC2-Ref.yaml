@@ -3,13 +3,13 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       AvailabilityZone: eu-west-1a
-      ImageId: ami-096800910c1b781ba
+      ImageId: ami-0a1a70369f0fce06a
       InstanceType: t2.micro
       SecurityGroups:
         - !Ref SSHSecurityGroup
       Tags:
       - Key: Name
-        Value: "ShaiM-ecs-26"
+        Value: "ShaiM-ref-26"
 
   # an elastic IP for our instance
   MyEIP:
