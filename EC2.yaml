@@ -5,4 +5,6 @@ Resources:
       AvailabilityZone: us-west-1
       ImageId: ami-0a1a70369f0fce06a
       InstanceType: t2.micro
-      Tags: ShaiServer-Lab
+      Tags: 
+      - Key: Name
+        Value: ShaiServer-Lab
